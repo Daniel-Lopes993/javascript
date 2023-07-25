@@ -19,14 +19,14 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseleave="saiu()">
+    <div id="area">
         Interaja...
     </div>
     <script>
         var area = document.getElementById('area')
-        area.addEventListener('click, clicar')
-        area.addEventListener('mouseover,e ntrar')
-        area.addEventListener('mouseLeave, saiu')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseover', entrar)
+        area.addEventListener('mouseleave', saiu)
         function clicar() {
             area.style.background = 'black'
             area.style.borderRadius = '20px'
