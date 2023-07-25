@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            left: 40%;
+            position: relative;
+            margin-top: 200px;
+            background-color: rgba(97, 193, 206, 0.726);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseleave="saiu()">
+        Interaja...
+    </div>
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click, clicar')
+        area.addEventListener('mouseover,e ntrar')
+        area.addEventListener('mouseLeave, saiu')
+        function clicar() {
+            area.style.background = 'black'
+            area.style.borderRadius = '20px'
+            area.innerText = 'Clicou!'
+        }
+        function entrar() {
+            area.style.background = 'rgba(97, 193, 206, 0.726)'
+            area.innerText = 'Entrou!!!'
+        }
+        function saiu(){       
+        area.style.borderRadius = '0px'    
+        area.style.background = 'blue'
+        area.innerText = 'Saiu!!'
+        }
+    </script>
+</body>
+</html>
